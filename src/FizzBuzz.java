@@ -3,17 +3,17 @@
  */
 class FizzBuzz {
 
-    public static void main(String[] args) {
+    public static void main(int args) {
 
         //for (int i = 1; i < 100; i++) {
-        int i = 1;
+        int i = args;
         while (i < 100){
             // Find out which numbers divide i.
             i = dofizzbuzz(i);
         }
     }
 
-    private static int dofizzbuzz(int i) {
+    static int dofizzbuzz(int i) {
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
 
